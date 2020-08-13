@@ -31,3 +31,25 @@ The dataset has details of 10302 Insurance claim with the following 25 features.
 22. CLM_AMT: Claim amount
 23. CAR_AGE: Age of the car
 24. CLAIM_FLAG: Target variable (YES/NO)
+
+
+**Learning Objective Statement**
+The project offers understanding on dealing with imbalanced dataset. The following concepts are applied:
+1. Train-test split
+2. Standard scaler
+3. Logistic Regression
+4. SMOTE
+5. feature scaling
+
+**How the problem is approached**:
+
+1. Loading and cleaning the data before splitting and pre-processing stage.
+2. For preprocessing, label-encoding was done; further various approaches of under-sampling and over-sampling were performed to deal with imbalanced data.
+3. Finally a classifier was fit and accuracy is measured.
+
+**Challenges Overcome**
+The only challenging part was cleaning the data. Several of the supposedly numerical features were of string type; these had to be converted. 
+
+Besides there were several NaN values - in a imbalanced data, eliminating null values could post challenges, in that the data might not be missing completly at random (MCAR) or missing at random (MAR), we are required to choose an appropriate under/ over-sampling approach.
+
+Rest was straightforward as for any other classification problem.
