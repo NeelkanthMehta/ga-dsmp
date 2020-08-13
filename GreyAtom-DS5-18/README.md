@@ -22,25 +22,24 @@ This dataset comes from the UCI Machine Learning Repository. In total there are
 Solving it will reinforce the following concepts of text analytics:
 
 • Preprocess text data with tokenization, stopword removal etc
-
 • Vectorize data using Bag-of-words and TF-IDF approaches
-
 • Apply classifiers (Logistic and Multinomial Naive Bayes) to perform multi-class classification
 
 
 **The Approach**:
 
 The following approach was taken to solve the problem
-	1. Loading and cleaning the dataset before extracting just the relevant features for this exercise, i.e., TITLE (X feature set) and CATEGORY (y target).
-	2. Cleaning the data by:
-		a. Filtering our all the non-alphabetic words; for they have little predicting power in NLP
-		b. Turning the words into lower case; since, the algorithms applied here are case sensitive.
-		c. Eliminating stopwords
-	3. Pre-processing by:
-		a. Splitting into training and test datasets
-		b. Count-Vectorizing the dataset (a process of converting each word instance in an observation, to a feature - similar to OneHot Encoding)
-		c. Tf-IDF-vectorizing; which is another way to vectorize the text data. This approach normalizes the no. of repetitions and assigns weights per inverse proportion of its popularity in the dataset.
-	4. Fitting model: we fitted Naïve Bayes algorithm, which assigns conditional probability score of document being of a particular CATEGORY given each word feature. Another model that could've been implemented in given use case is Support Vector Classifier; for it is effective in handling high dimensional features set.
+
+1. Loading and cleaning the dataset before extracting just the relevant features for this exercise, i.e., TITLE (X feature set) and CATEGORY (y target).
+2. Cleaning the data by:
+a. Filtering our all the non-alphabetic words; for they have little predicting power in NLP
+b. Turning the words into lower case; since, the algorithms applied here are case sensitive.
+c. Eliminating stopwords
+3. Pre-processing by:
+a. Splitting into training and test datasets
+b. Count-Vectorizing the dataset (a process of converting each word instance in an observation, to a feature - similar to OneHot Encoding)
+c. Tf-IDF-vectorizing; which is another way to vectorize the text data. This approach normalizes the no. of repetitions and assigns weights per inverse proportion of its popularity in the dataset.
+4. Fitting model: we fitted Naïve Bayes algorithm, which assigns conditional probability score of document being of a particular CATEGORY given each word feature. Another model that could've been implemented in given use case is Support Vector Classifier; for it is effective in handling high dimensional features set.
 Conventional dimensionality reduction techniques viz., feature selection, decomposition proves to be ineffective in case of NLP problems.
 
 
